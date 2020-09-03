@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# angular-project
+>>>>>>> fa706569db258e3b415291536c15dc59ad49d083
