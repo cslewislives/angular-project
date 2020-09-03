@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-project';
+  links = [
+    {path: '/home', title: 'Home'},
+    {path: '/orders', title: 'Orders'}
+  ]
 }
