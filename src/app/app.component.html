@@ -8,7 +8,14 @@
 
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" opened class="app-sidenav">
-    <h2>Hello</h2>
+    <nav>
+      <a mat-button class="nav-link"
+      *ngFor="let link of links"
+      [routerLink]="link.path">
+        <mat-icon>{{link.icon}}</mat-icon>
+        {{link.title}}
+      </a>
+    </nav>
   </mat-sidenav>
 
   <div class="container">

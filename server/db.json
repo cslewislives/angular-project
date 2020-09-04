@@ -4,8 +4,19 @@
       "id": 1,
       "currency": "Bitcoin",
       "price": 5,
-      "buy": true,
-      "sell": false
+      "buyOrSell": "buy"
+    },
+    {
+      "id": 2,
+      "currency": "Aether",
+      "price": "20",
+      "buyOrSell": "sell"
+    },
+    {
+      "id": 3,
+      "currency": "Bit Coin",
+      "price": "25",
+      "buyOrSell": "sell"
     }
   ]
 }

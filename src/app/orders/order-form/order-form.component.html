@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Order Form</mat-card-title>
+  </mat-card-header>
+  <form #form="ngForm" (submit)="saveOrder(order)">
+    <mat-card-content>
+      <mat-form-field class="fields">
+        <input matInput placeholder="Currency" type="text" name="currency" [(ngModel)]="order.currency" required>
+      </mat-form-field>
+      <mat-form-field class="fields">
+        <input matInput placeholder="Price" type="text" name="price" [(ngModel)]="order.price" required>
+      </mat-form-field>
+      <section class="fields">
+        <label class="choose-margin">Buy or Sell:</label>
+        <mat-radio-group name="buy-sell" [(ngModel)]="order.buyOrSell">
+          <mat-radio-button class="choose-margin" value="buy">Buy</mat-radio-button>
+          <mat-radio-button class="choose-margin" value="sell">Sell</mat-radio-button>
+        </mat-radio-group>
+      </section>
+    </mat-card-content>
+    <mat-card-actions align="start">
+      <button [disabled]="form.invalid" mat-button type="submit">Submit</button>
+
+    </mat-card-actions>
+  </form>
+</mat-card>

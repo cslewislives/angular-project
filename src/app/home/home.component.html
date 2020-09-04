@@ -1,28 +1,5 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Buy Orders</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <mat-list>
-      <ng-container *ngFor="let order of orders">
-        <mat-list-item *ngIf="order.buy">
-            <h3>{{order.currency}}</h3>
-        </mat-list-item>
-      </ng-container>
-    </mat-list>
-  </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Sell Orders</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <mat-list>
-      <ng-container *ngFor="let order of orders">
-        <mat-list-item *ngIf="order.sell">
-            <h3>{{order.currency}}</h3>
-        </mat-list-item>
-      </ng-container>
-    </mat-list>
-  </mat-card-content>
-</mat-card>
+<app-orders-list
+  [orders]="orders"
+  [buyOrders]="buyOrders"
+  [sellOrders]="sellOrders"
+  ></app-orders-list>

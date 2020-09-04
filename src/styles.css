@@ -1,3 +1,5 @@
+@import '~normalize.css';
+
 html {
   height: 100%;
 }
@@ -24,12 +26,12 @@ p {
 
 .container {
   margin: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .container [class*='col'] {
   padding: 10px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .mat-card-header-text {
@@ -56,7 +58,7 @@ mat-toolbar {
 
 mat-sidenav {
   box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
-  width: 200px;
+  width: 150px;
   padding-top: 10px;
 }
 
@@ -76,3 +78,4 @@ mat-card:not(.dashboard-card) {
 .full-width {
   width: 100%;
 }
+

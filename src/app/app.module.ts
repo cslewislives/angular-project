@@ -8,18 +8,24 @@ import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { OrdersService } from './shared/services/orders.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { OrderFormComponent } from './orders/order-form/order-form.component';
+import { OrdersListComponent } from './orders/orders-list/orders-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    OrderFormComponent,
+    OrdersListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     OrdersService

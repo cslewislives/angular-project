@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Buy Orders: {{buyOrders}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <ng-container *ngFor="let order of orders">
+        <mat-list-item *ngIf="order.buyOrSell === 'buy'">
+            <p matLine>Currency: {{order.currency}}</p>
+            <p matLine>Price: ${{order.price}}</p>
+        </mat-list-item>
+      </ng-container>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Sell Orders: {{sellOrders}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <ng-container *ngFor="let order of orders">
+        <mat-list-item *ngIf="order.buyOrSell === 'sell'">
+            <p matLine>Currency: {{order.currency}}</p>
+            <p matLine>Price: ${{order.price}}</p>
+        </mat-list-item>
+      </ng-container>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
